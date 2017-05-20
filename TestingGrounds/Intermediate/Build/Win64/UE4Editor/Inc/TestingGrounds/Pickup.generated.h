@@ -16,14 +16,6 @@ struct FHitResult;
 
 #define TestingGrounds_Source_TestingGrounds_Public_Pickup_h_11_RPC_WRAPPERS \
  \
-	DECLARE_FUNCTION(execOnComponentBeginOverlap) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		this->OnComponentBeginOverlap(); \
-		P_NATIVE_END; \
-	} \
- \
 	DECLARE_FUNCTION(execOnPlayerEnterPickupBox) \
 	{ \
 		P_GET_OBJECT(UPrimitiveComponent,Z_Param_OverlappedComp); \
@@ -40,14 +32,6 @@ struct FHitResult;
 
 
 #define TestingGrounds_Source_TestingGrounds_Public_Pickup_h_11_RPC_WRAPPERS_NO_PURE_DECLS \
- \
-	DECLARE_FUNCTION(execOnComponentBeginOverlap) \
-	{ \
-		P_FINISH; \
-		P_NATIVE_BEGIN; \
-		this->OnComponentBeginOverlap(); \
-		P_NATIVE_END; \
-	} \
  \
 	DECLARE_FUNCTION(execOnPlayerEnterPickupBox) \
 	{ \

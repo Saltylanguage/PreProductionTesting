@@ -26,27 +26,16 @@ APickup::APickup()
 
 void APickup::OnPlayerEnterPickupBox(UPrimitiveComponent * OverlappedComp, AActor * otherActor, UPrimitiveComponent * OtherComp, int32 OtherBodyIndex, bool bFromSweep, const FHitResult & sweepResult)
 {
-	
-
-	Destroy();
-
+	UE_LOG(LogTemp, Warning, TEXT("Test"));
+	Destroy();	
 }
 
-void APickup::OnComponentBeginOverlap()
-{
-	this->Destroy();
-	
-}
 
 
 // Called when the game starts or when spawned
 void APickup::BeginPlay()
 {
 	Super::BeginPlay();
-
-
-
-
 }
 
 // Called every frame
@@ -61,6 +50,7 @@ void APickup::Tick(float DeltaTime)
 	runningTime += DeltaTime * hoverSpeedFactor;
 
 	SetActorLocation(newLocation);
+	//UE_LOG(LogTemp, Warning, TEXT("Delta Time: %f"), DeltaTime);
 
 }
-
+ 

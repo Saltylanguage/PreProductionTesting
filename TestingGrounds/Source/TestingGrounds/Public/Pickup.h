@@ -26,13 +26,13 @@ public:
 	float runningTime;
 
 	UPROPERTY(EditAnywhere)
-		float hoverSpeedFactor = 1;
+	float hoverSpeedFactor = 1;
 
 	UPROPERTY(EditAnywhere)
-		float hoverHeightFactor = 1;
+	float hoverHeightFactor = 1;
 
 	UFUNCTION()
-		void OnPlayerEnterPickupBox
+	void OnPlayerEnterPickupBox
 		(
 			UPrimitiveComponent* OverlappedComp,
 			AActor* otherActor,
@@ -42,8 +42,6 @@ public:
 			const FHitResult& sweepResult
 		);
 
-	UFUNCTION()
-		void OnComponentBeginOverlap();
 
 protected:
 	// Called when the game starts or when spawned

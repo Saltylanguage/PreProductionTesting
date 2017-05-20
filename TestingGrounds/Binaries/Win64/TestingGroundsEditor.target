@@ -2,7 +2,7 @@
 	"TargetName" : "TestingGroundsEditor",
 	"Platform" : "Win64",
 	"Configuration" : "Development",
-	"BuildId" : "cacf1353-bd99-4987-82df-e4cb6f22203c",
+	"BuildId" : "1acdedee-5378-482f-afbe-220ccf46e18f",
 	"Version" : 
 	{
 		"MajorVersion" : 4,
@@ -17,15 +17,15 @@
 	"BuildProducts" :
 	[
 		{
-			"Path" : "$(ProjectDir)/Binaries/Win64/UE4Editor-TestingGrounds-8188.dll",
+			"Path" : "$(ProjectDir)/Binaries/Win64/UE4Editor-TestingGrounds-1795.dll",
 			"Type" : "DynamicLibrary"
 		},
 		{
-			"Path" : "$(ProjectDir)/Binaries/Win64/UE4Editor-TestingGrounds-8188.pdb",
+			"Path" : "$(ProjectDir)/Binaries/Win64/UE4Editor-TestingGrounds-1795.pdb",
 			"Type" : "SymbolFile"
 		},
 		{
-			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-TestingGrounds-8188.lib",
+			"Path" : "$(ProjectDir)/Intermediate/Build/Win64/UE4Editor/Development/UE4Editor-TestingGrounds-1795.lib",
 			"Type" : "ImportLibrary"
 		},
 		{

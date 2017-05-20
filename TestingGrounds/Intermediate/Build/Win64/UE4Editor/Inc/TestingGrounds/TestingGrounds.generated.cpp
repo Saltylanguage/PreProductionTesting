@@ -13,10 +13,9 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 void EmptyLinkFunctionForGeneratedCode1TestingGrounds() {}
 	void APickup::StaticRegisterNativesAPickup()
 	{
-		FNativeFunctionRegistrar::RegisterFunction(APickup::StaticClass(), "OnComponentBeginOverlap",(Native)&APickup::execOnComponentBeginOverlap);
 		FNativeFunctionRegistrar::RegisterFunction(APickup::StaticClass(), "OnPlayerEnterPickupBox",(Native)&APickup::execOnPlayerEnterPickupBox);
 	}
-	IMPLEMENT_CLASS(APickup, 715382285);
+	IMPLEMENT_CLASS(APickup, 148832110);
 	void ATestClass::StaticRegisterNativesATestClass()
 	{
 	}
@@ -31,29 +30,12 @@ void EmptyLinkFunctionForGeneratedCode1TestingGrounds() {}
 	ENGINE_API class UClass* Z_Construct_UClass_UStaticMeshComponent_NoRegister();
 	ENGINE_API class UClass* Z_Construct_UClass_USceneComponent_NoRegister();
 
-	TESTINGGROUNDS_API class UFunction* Z_Construct_UFunction_APickup_OnComponentBeginOverlap();
 	TESTINGGROUNDS_API class UFunction* Z_Construct_UFunction_APickup_OnPlayerEnterPickupBox();
 	TESTINGGROUNDS_API class UClass* Z_Construct_UClass_APickup_NoRegister();
 	TESTINGGROUNDS_API class UClass* Z_Construct_UClass_APickup();
 	TESTINGGROUNDS_API class UClass* Z_Construct_UClass_ATestClass_NoRegister();
 	TESTINGGROUNDS_API class UClass* Z_Construct_UClass_ATestClass();
 	TESTINGGROUNDS_API class UPackage* Z_Construct_UPackage__Script_TestingGrounds();
-	UFunction* Z_Construct_UFunction_APickup_OnComponentBeginOverlap()
-	{
-		UObject* Outer=Z_Construct_UClass_APickup();
-		static UFunction* ReturnFunction = NULL;
-		if (!ReturnFunction)
-		{
-			ReturnFunction = new(EC_InternalUseOnlyConstructor, Outer, TEXT("OnComponentBeginOverlap"), RF_Public|RF_Transient|RF_MarkAsNative) UFunction(FObjectInitializer(), NULL, 0x00020401, 65535);
-			ReturnFunction->Bind();
-			ReturnFunction->StaticLink();
-#if WITH_METADATA
-			UMetaData* MetaData = ReturnFunction->GetOutermost()->GetMetaData();
-			MetaData->SetValue(ReturnFunction, TEXT("ModuleRelativePath"), TEXT("Public/Pickup.h"));
-#endif
-		}
-		return ReturnFunction;
-	}
 	UFunction* Z_Construct_UFunction_APickup_OnPlayerEnterPickupBox()
 	{
 		struct Pickup_eventOnPlayerEnterPickupBox_Parms
@@ -106,7 +88,6 @@ void EmptyLinkFunctionForGeneratedCode1TestingGrounds() {}
 				UObjectForceRegistration(OuterClass);
 				OuterClass->ClassFlags |= 0x20900080;
 
-				OuterClass->LinkChild(Z_Construct_UFunction_APickup_OnComponentBeginOverlap());
 				OuterClass->LinkChild(Z_Construct_UFunction_APickup_OnPlayerEnterPickupBox());
 
 PRAGMA_DISABLE_DEPRECATION_WARNINGS
@@ -116,7 +97,6 @@ PRAGMA_DISABLE_DEPRECATION_WARNINGS
 				UProperty* NewProp_pickupMesh = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("pickupMesh"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(pickupMesh, APickup), 0x0010000000080009, Z_Construct_UClass_UStaticMeshComponent_NoRegister());
 				UProperty* NewProp_pickupRoot = new(EC_InternalUseOnlyConstructor, OuterClass, TEXT("pickupRoot"), RF_Public|RF_Transient|RF_MarkAsNative) UObjectProperty(CPP_PROPERTY_BASE(pickupRoot, APickup), 0x0010000000080009, Z_Construct_UClass_USceneComponent_NoRegister());
 PRAGMA_ENABLE_DEPRECATION_WARNINGS
-				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_APickup_OnComponentBeginOverlap(), "OnComponentBeginOverlap"); // 1998671142
 				OuterClass->AddFunctionToFunctionMapWithOverriddenName(Z_Construct_UFunction_APickup_OnPlayerEnterPickupBox(), "OnPlayerEnterPickupBox"); // 153313128
 				OuterClass->StaticLink();
 #if WITH_METADATA
@@ -183,8 +163,8 @@ PRAGMA_ENABLE_DEPRECATION_WARNINGS
 			ReturnPackage = CastChecked<UPackage>(StaticFindObjectFast(UPackage::StaticClass(), NULL, FName(TEXT("/Script/TestingGrounds")), false, false));
 			ReturnPackage->SetPackageFlags(PKG_CompiledIn | 0x00000000);
 			FGuid Guid;
-			Guid.A = 0x2E4C4375;
-			Guid.B = 0x96480BF5;
+			Guid.A = 0x29888D6D;
+			Guid.B = 0x400A0479;
 			Guid.C = 0x00000000;
 			Guid.D = 0x00000000;
 			ReturnPackage->SetGuid(Guid);
